@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProductInfo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="470">
+        Title="MainWindow" Height="450" Width="500
+        ">
     <Grid>
         <ComboBox x:Name="comboboxCatgories" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="250" SelectionChanged="cbSelectionChanged" />
-        <TextBox x:Name="textboxProductName" HorizontalAlignment="Left" Margin="276,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" Height="22" />
-        <Label Content="Productname" HorizontalAlignment="Left" Margin="276,10,0,0" VerticalAlignment="Top" />
-        <TextBox x:Name="textboxPrice" HorizontalAlignment="Left" Margin="276,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" Height="22" />
-        <ListBox x:Name="listboxProducts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,94,210,10" SelectionChanged="lbSelectionChanged" />
-        <Label Content="Catergory:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
-        <Label Content="Products:" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" />
-        <Label Content="Price:" HorizontalAlignment="Left" Margin="276,68,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxProductName" HorizontalAlignment="Left" Margin="279,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" Height="22" IsReadOnly="True" />
+        <Label Content="Productname" Margin="279,10,-3,0" VerticalAlignment="Top" />
+        <TextBox x:Name="textboxPrice" Margin="279,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" Height="22" HorizontalAlignment="Left" IsReadOnly="True" />
+        <ListBox x:Name="listboxProducts" Margin="10,94,0,10" SelectionChanged="lbSelectionChanged" HorizontalAlignment="Left" Width="250" />
+        <Label Content="Catergory:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Label Content="Products:" Margin="10,68,0,0" VerticalAlignment="Top" />
+        <Label Content="Price:" Margin="279,68,-3,0" VerticalAlignment="Top" />
     </Grid>
 </Window>

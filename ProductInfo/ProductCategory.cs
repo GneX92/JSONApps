@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProductInfo
+﻿namespace ProductInfo
 {
     internal class ProductCategory
     {
-        public string CategoryName { get; set; }
-        public List<Product> Products { get; set; }
+        public string? CategoryName { get; set; }
+        public List<Product>? Products { get; set; }
 
-        public override string ToString() => CategoryName;
+        public override string ToString() => CategoryName is not null ? CategoryName : "Unknown CategoryName";
     }
 }
